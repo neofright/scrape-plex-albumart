@@ -15,3 +15,6 @@ etc.
 This allows you to manually merge the directory trees and you can decide if you want to overwrite files etc.
 
 For my use case - I just copy this album art tree to my iPod over USB.
+
+## Usage:
+Change the contents of the `baseurl` and `token` variables and run the script. It is completely barebones with no args and nothing is printed to stdout.
