@@ -18,7 +18,7 @@ For my use case - I just rsync this album art tree to my iPod over USB.
 
 I have not made any attempt to allow this to run from Windows (it assumes *NIX server and client) but could be made to work if you take care of the path separators.
 
-Supports 2FA and will convert progressive scan images to baseline for compatability with Rockbox.
+Supports 2FA and will convert progressive scan images to baseline for compatibility with Rockbox.
 
 ## Usage:
 Create a .env file with the following contents (substituting real values):
