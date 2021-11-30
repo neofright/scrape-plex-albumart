@@ -32,5 +32,7 @@ Note that `plex_server` is the server _name_ and not the URL.
 
 ## Requirements:
 ImageMagick (identify and convert)
+
 plexapi
+
 python-dotenv
