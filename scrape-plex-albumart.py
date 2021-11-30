@@ -46,7 +46,8 @@ def scrape_plex_albumart(library_name):
 
             album_jpeg_path = os.path.join(album_directory[1:], 'folder.jpg')
             if not os.path.isfile(album_jpeg_path):
-                album_artwork_url = baseurl + album.thumb + "?X-Plex-Token=" + token
+                album_artwork_url = plex.transcodeImage(album.thumb, '320', '320')
+                #album_artwork_url = baseurl + album.thumb + "?X-Plex-Token=" + token
                 r = requests.get(album_artwork_url)
                 with open(album_jpeg_path, 'wb') as f:
                     print('Writing ' + album_jpeg_path)
@@ -81,6 +82,6 @@ if __name__ == "__main__":
     account = MyPlexAccount(os.environ.get('plex_username'), os.environ.get('plex_password') + mfa_token)
     plex = account.resource(os.environ.get('plex_server')).connect()  # returns a PlexServer instance
     token = account.authenticationToken
-    baseurl = plex._baseurl
+    #baseurl = plex._baseurl
     #######################################
     scrape_plex_albumart(os.environ.get('plex_library'))
