@@ -28,7 +28,7 @@ Create a .env file with the following contents (substituting real values):
     plex_password = ''
     plex_library = 'Music'
 
-Not that `plex_server` is the server _name_ and not the URL.
+Note that `plex_server` is the server _name_ and not the URL.
 
 ## Requirements:
 ImageMagick (identify and convert)
