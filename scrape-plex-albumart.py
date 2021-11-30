@@ -81,7 +81,7 @@ if __name__ == "__main__":
     #######################################
     account = MyPlexAccount(os.environ.get('plex_username'), os.environ.get('plex_password') + mfa_token)
     plex = account.resource(os.environ.get('plex_server')).connect()  # returns a PlexServer instance
-    token = account.authenticationToken
+    #token = account.authenticationToken
     #baseurl = plex._baseurl
     #######################################
     scrape_plex_albumart(os.environ.get('plex_library'))
