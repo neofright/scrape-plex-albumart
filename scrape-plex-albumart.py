@@ -78,6 +78,8 @@ if __name__ == "__main__":
     mfa_enabled = input_yes_no('Does your Plex account use 2FA?')
     if mfa_enabled:
         mfa_token = input('Enter Plex TOTP token: ')
+    else:
+        mfa_token = ""
     #######################################
     account = MyPlexAccount(os.environ.get('plex_username'), os.environ.get('plex_password') + mfa_token)
     plex = account.resource(os.environ.get('plex_server')).connect()  # returns a PlexServer instance
