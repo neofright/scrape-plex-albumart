@@ -2,13 +2,13 @@
 
 I needed a way to get accurate album art for Rockbox on my iPod6g. Seeing as I already had my library indexed in Plex and the albumart scraping has been very reliable I decided to export the album art this way.
 
-If your music library on your Plex server looks something like on-disk:
+If your music library on your Plex server looks something like this on-disk:
 
 ```/mnt/Music/albums/artist/album/track.ext```
 
 Then this script will create a mirrored directory structure in its working directory like this:
 
-```/path/to/wherever/you/are/running/this/from/mnt/Music/albums/artist/artist/folder.jpg```
+```/path/to/wherever/you/are/running/this/from/mnt/Music/albums/artist/album/folder.jpg```
 
 etc.
 
