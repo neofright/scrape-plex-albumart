@@ -36,7 +36,7 @@ def convert_progressive_jpg_to_baseline(jpeg_file):
 
 def scrape_plex_albumart(library_name):
     music = plex.library.section(library_name)
-    for album in music.searchAlbums():    
+    for album in music.searchAlbums():
         if album.thumb is not None:
             ## album directory. Expensive call to determine as we must get all tracks. I can't find a better way right now.
             ## Help from https://old.reddit.com/r/PleX/comments/gbu32h/get_filepath_of_directory_where_movie_is_located/fp860d2/
