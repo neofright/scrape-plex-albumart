@@ -26,7 +26,7 @@ Create a .env file with the following contents (substituting real values):
     plex_server = ''
     plex_username = ''
     plex_password = ''
-    plex_library = 'Music'
+    plex_library = 'Music,Music DnB'
 
 Note that `plex_server` is the server _name_ and not the URL.
 
