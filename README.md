@@ -36,3 +36,6 @@ ImageMagick (identify and convert)
 plexapi
 
 python-dotenv
+
+## Update 2022:
+This repo is now archived in favor of [neofright/scrape-plex-albumart-bash](https://github.com/neofright/scrape-plex-albumart-bash)
